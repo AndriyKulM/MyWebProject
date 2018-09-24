@@ -3,14 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Головна</title>
-    </head>
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <body>
         <h2>ГОЛОВНА</h2>
-        <h3>Меню:</h3>
-        <ol>
-          <li><a href="gallery.html">Галерея</a></li>
-          <li><a href="programs.html">Програми</a></li>
-          <li><a href="kontakty.html">Контакти</a></li>
-        </ol>
+        <br>
+        <div class="container">
+          <!-- Nav tabs -->
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#index">Головна</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#gallery">Галерея</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#programs">Програми</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#kontakty">Контакти</a></li>
+            </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="index" class="container tab-pane active"><br>
+              <h3>Головна</h3>
+              <p>Головна сторінка цього сайту. Ви зараз перебуваєте тут.</p>
+            </div>
+            <div id="gallery" class="container tab-pane fade"><br>
+              <h3>Галерея</h3>
+              <p>Містить зображення та логотипи курсу CS50 та мови програмування Python. <a href="gallery.html">Перейти на сторінку</a></p>
+            </div>
+            <div id="programs" class="container tab-pane fade"><br>
+              <h3>Програми</h3>
+              <p>Містить код програм на мові Python. <a href="programs.html">Перейти на сторінку</a></p>
+            </div>
+            <div id="kontakty" class="container tab-pane fade"><br>
+              <h3>Контакти</h3>
+              <p>Містить мої контакти. <a href="kontakty.html">Перейти на сторінку</a></p>
+            </div>
+          </div>
+        </div>
     </body>
 </html>
